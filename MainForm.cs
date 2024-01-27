@@ -302,20 +302,13 @@ namespace РВП_3
                             else break;
                         }
 
-                        /*// Конвертация полученных байтов в строку XML
+                        
                         xmlData = Encoding.ASCII.GetString(bytes, 0, bytesRec);
                         ReceiveModels(xmlData);*/
 
                         sender.Shutdown(SocketShutdown.Both);
                         sender.Close();
-                        /*Control control = new Control();
-                        syncContext.Post(_ =>
-                        {
-                            dgvModels.Rows.Clear();
-                            dgvModels.Columns.Clear();
-                            dgvModels.Visible = true;
-                            createModelTable();
-                        }, null);*/
+                        
 
                     }
                     catch (ArgumentNullException ane)
@@ -369,6 +362,7 @@ namespace РВП_3
                 carModels = IModelSerializer.Deserialize(stringReader);
             }
         }
+        // Не гласные договоренности
 
     }
 }
