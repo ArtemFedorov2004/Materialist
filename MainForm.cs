@@ -25,6 +25,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 // Право
 namespace РВП_3
 {
+    //Салфетки
     public partial class MainForm : Form
     {
         public MainForm()
