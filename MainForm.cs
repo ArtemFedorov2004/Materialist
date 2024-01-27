@@ -22,7 +22,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Serialization;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
+// Право
 namespace РВП_3
 {
     public partial class MainForm : Form
@@ -362,7 +362,7 @@ namespace РВП_3
                 carModels = IModelSerializer.Deserialize(stringReader);
             }
         }
-        // Не гласные договоренности
+        
 
     }
 }
